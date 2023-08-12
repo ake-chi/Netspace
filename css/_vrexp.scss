@@ -1,0 +1,157 @@
+header {
+  &.subpg-header {
+    height: 70vh;
+    background: url("/imgs/sub-pg-bg.jpg") no-repeat;
+    background-position: 50% 60%;
+    background-size: cover;
+
+    &.contact-header {
+      height: 20vh !important;
+      background-position: top;
+    }
+  }
+}
+
+.subpg-banner-text {
+  font-family: "JostBold";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gs-wrap {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  padding: 0 60px;
+  overflow: hidden;
+
+  .games-slider {
+    position: relative;
+    z-index: 200;
+    padding: 0 0px;
+    margin: 0 auto 3rem auto;
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
+  .game.slick-slide {
+    width: 400px;
+    height: 400px !important;
+    transition: transform 0.4s;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .game.slick-slide {
+    transform: scale(0.7) translate(640px) perspective(800px) rotateY(25deg);
+  }
+
+  .game.slick-slide.slick-center + .slick-slide {
+    transform: scale(0.8) translate(-250px) perspective(800px) rotateY(-25deg);
+    z-index: 10;
+  }
+
+  // .game.slick-slide.slick-center + .slick-slide {
+  //   transform: scale(0.8) translate(-250px) perspective(800px) rotateY(-25deg);
+  //   z-index: 10;
+  // }
+
+  .game.slick-slide.slick-center + .slick-slide {
+    transform: scale(0.8) translate(-250px) perspective(800px) rotateY(-25deg);
+    z-index: 10;
+  }
+
+  .game.slick-slide.slick-center + .slick-slide + .game.slick-slide {
+    transform: scale(0.7) translate(-640px) perspective(800px) rotateY(-25deg);
+    z-index: 5;
+  }
+  .game.slick-slide.slick-active {
+    transform: scale(0.8) translate(250px) perspective(800px) rotateY(25deg);
+  }
+
+  .game.slick-slide.slick-center {
+    /* margin: 0 -10%; */
+    transform: scale(1);
+    z-index: 30;
+  }
+  .slick-center:after {
+    opacity: 0;
+  }
+
+  .vr-exp-desc{
+      text-align: center;
+      margin-bottom: 5rem;
+      h2{
+          margin-bottom: 2rem;
+      }
+      p{         
+          padding: 0 15%;
+          line-height: 2.5rem;
+              
+        &.cta2{
+            margin-top: 2rem;
+        }
+      }
+  }
+
+  .sec-text.exp-desc {
+    width: 60% !important;
+    margin: auto !important;
+    h2{
+      padding-left: 0 !important;
+    }
+    p{         
+     
+        line-height: 2.5rem;
+    }
+    ul{
+        padding:0;
+        li span{
+            margin-right: 1rem;
+        }
+    }
+    &.vr-cafe-desc{
+        width: 100% !important;
+        padding-top: 5rem;
+    }
+}
+
+.exp-desc{
+  &.exd-2 p{
+    font-family: 'JostMedium';
+    font-size: 1.75rem;
+  }
+}
+
+  .img.vr-person {
+    position: relative;
+    top: -7rem;
+  }
+
+  .vr-exp-sec{
+      background: #000;
+      color:white;
+      padding-top: 0;
+
+      .row:last-child{
+        margin-top: -7rem; 
+      }
+  }
+
+  .exp-img{
+      position: relative;
+      bottom: -5rem;
+      img{
+          width: 600px;
+      }
+  }

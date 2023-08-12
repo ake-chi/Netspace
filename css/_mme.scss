@@ -1,0 +1,126 @@
+header{   
+    &.mme-pg{
+        height: 600px;
+        position: relative;
+        background: rgb(0,206,192);
+        background: linear-gradient(0deg, rgba(0,206,192,1) 0%, rgba(0,95,95,1) 100%);
+    }
+}
+
+header{   
+    &.mme-pg{
+        nav{
+            .navbar-nav{
+                li{
+                    a{
+                        &:hover{
+                            color: #0cada6 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mme-b-area{
+    background:url('/imgs/freedom-bg-texture-3.png') no-repeat;
+    background-size: cover ;
+    background-position: 50% 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    .mme-banner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.mme-header-imgs{ 
+
+    .mme-img:last-child{
+        img:last-child{
+            width: 430px;
+            position: relative;
+            bottom: -9rem;
+            left: 7rem;           
+        }
+    }
+}
+
+.freestyle-features{
+    text-align: center;
+    margin: 2rem 0;
+    img{
+        margin-bottom: 2rem;
+    }
+    p{
+        padding: 0 10%;         
+        &.f-title{
+            font-family: "JostMedium";
+        }
+    }
+    
+
+}
+.how-to-get-started{
+    background: #01cfcd;
+
+    .htgs-li{
+        color: white;
+        h2{
+            margin-bottom: 2rem;
+        }
+        ul{
+            padding: 0;
+            li{
+                margin-bottom: 2rem;
+                p:first-child{
+                    margin-bottom: 0;    
+                    font-family: 'JostSemiBold';                
+                }
+                p:last-child{
+                    font-family: 'JostBook';
+                    padding-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.mob-img{
+    padding: 2rem 0;
+}
+
+
+.freestyle-link{
+    p{
+        margin-bottom: 0;
+        a{
+            background: #4cd233;
+            color: white;
+            border-radius: 50px;        
+            padding: 0.75rem 1rem;
+            min-width: 200px;
+            margin-top: 3rem;
+        }       
+    }
+    img{
+        // width: 100%;
+        padding: 1rem 2rem;
+    }
+}
+
+
+.mme-freestyle-link{
+    a{
+        &:hover{
+            background: darken($color: #4cd233, $amount: 5%);
+        }
+    }
+}

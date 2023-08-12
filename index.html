@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NetSpace: Virtual Reality Experience in Sydney</title>
+    <meta name="description"
+        content="NetSpace offers the best virtual reality experience in Sydney - choose from VR games, escape rooms, and a lot more! We're accepting credit card payments - visit us now!">
+    <link rel="canonical" href="http://www.netspace.com.au/" />
+    <meta name="description" content="credit card">
+    <link rel="icon" href="imgs/netspace_fav.ico" type="image/x-icon">
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Slick-theme.css-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <!-- Slick-theme.css -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- AOS animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Splitting -->
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting.css" />
+    <link rel="stylesheet" href="https://unpkg.com/splitting/dist/splitting-cells.css" />
+    <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+    <!-- Spotlight -->
+    <script src="script/spotlight.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg d-none d-lg-block nav-menu" id="desktop-nav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imgs/netspace_logo.png" alt="NetSpace">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html" id="home">Home<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item t-menu">
+                            <a href="vr-experience.html" class="nav-link">VR Experience</a>
+                            <ul class="t-menu-li">
+                                <li><a href="vr-experience.html#games">Games</a></li>
+                                <li><a href="vr-experience.html#escaperooms">Escape Rooms</a></li>
+                                <li><a href="vr-experience.html#vrcafe">VR Cafe</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item cta-scroll">
+                            <a class="nav-link a-link" href="index.html#aboutus">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Enquire</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- mobile menu -->
+
+        <div id="mobile-menu" class="d-md-block d-lg-none">
+
+            <nav id="mobile-nav" class="navbar">
+                <div class="container">
+                    <div class="mobile-menu nav-menu">
+                        <a class="navbar-brand nav-link sm-link" href="index.html">
+                            <img src="imgs/netspace_logo.png" alt="NetSpace">
+                        </a>
+                        <div class="menu-btn">
+                            <div class="bar bar--1"></div>
+                            <div class="bar bar--2"></div>
+                            <div class="bar bar--3"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="slide-menu nav-menu">
+                <div class="close-btn">
+                    <p class="text-right"><span><i class="fas fa-times"></i></span></p>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" id="home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item t-menu-mob">
+                        <a href="vr-experience.html" class="nav-link">VR Experience</a>
+                        <ul class="t-menu-li-mob">
+                            <li><a href="vr-experience.html#games">Games</a></li>
+                            <li><a href="vr-experience.html#escaperooms">Escape Rooms</a></li>
+                            <li><a href="vr-experience.html#vrcafe">VR Cafe</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item cta-scroll">
+                        <a class="nav-link a-link" href="index.html#aboutus">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="parallax-bg-wrapper img">
+            <div class="parallax-bg" id="scene2">
+                <div class="banner-bg banner-bg-1"></div>
+                <div class="banner-bg banner-bg-2" data-depth="0.1"></div>
+            </div>
+        </div>
+
+        <div class="banner-area">
+            <div class="container">
+                <div class="banner-text">
+                    <div class="h1-wrap">
+                        <h1><span data-aos="fade" data-aos-duration="2000" data-aos-easing="ease-out">Your</span> <span
+                                data-aos="zoom-out" data-aos-delay="300" data-aos-duration="2000"
+                                data-aos-easing="ease-out">Imagination,</span>
+                            <br> <span data-aos="fade" data-aos-delay="600" data-aos-duration="2000"
+                                data-aos-easing="ease-out">turned into</span>
+                            <span data-aos="fade" data-aos-delay="1000" data-aos-duration="2000"
+                                data-aos-easing="ease-out">Reality.</span></h1>
+                    </div>
+
+                    <div data-aos="fade" data-aos-delay="1500" data-aos-duration="2000" data-aos-easing="ease-out">
+                        <p>Try the ultimate virtual reality experience now!</p>
+                        <p class="cta"><a href="contact.html" class="btn cta-link">Enquire Now</a> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="spotlight"></div>
+
+    </header>
+
+    
+
+    <section class="vr-bg">
+        <div class="parallax-bg-wrapper img">
+            <div class="parallax-bg" id="scene1">
+                <div class="banner-bg sec-bg-1"></div>
+                <!-- <div class="banner-bg sec-bg-1a" data-depth="0.2"></div>
+                <div class="banner-bg sec-bg-1b" data-depth="0.1"></div>
+                <div class="banner-bg sec-bg-1c" data-depth="0.1"></div>
+                <div class="banner-bg sec-bg-1d"></div> -->
+                <div class="banner-bg sec-bg-2" data-depth="0.2"></div>
+            </div>
+        </div>
+        <!-- <div class="spotlight"></div> -->
+    </section>
+
+    <section class="abt-us pt-0 vrglass-sec" id="aboutus">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img vr-glass vr-g1" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000"
+                    data-aos-easing="ease-out-back">
+                    <img data-tilt class="vrglassTilt" src="imgs/vr-glass.png" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 my-auto pl-5">
+                <div class="sec-text">
+                    <div data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200" data-aos-easing="ease-out">
+                        <p class="sec-name">About Us</p>
+                        <h2>A brand-new way to discover, educate and entertain.</h2>
+                    </div>
+                    <p class="p-txt" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"
+                        data-aos-easing="ease-out">NetSpace is your go-to VR arcade for the best virtual reality
+                        experience in Sydney.
+                        With our growing
+                        selection of solo and multiplayer games, players of all ages can seamlessly enjoy a variety of
+                        action, adventure and simulation-based experiences!</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="vrcafe-sec">
+
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 my-auto">
+                <div class="sec-text">
+                    <h2 data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-out">VR Cafe</h2>
+                    <p class="p-txt" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-out">Our team
+                        is happy to announce that we are finally launching our newest and most
+                        unique virtual reality
+                        experience to date –VR Café.</p>
+                    <p class="p-txt" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000"
+                        data-aos-easing="ease-out">VR Café offers new and exciting ways to connect. It is an online
+                        virtual community
+                        space that lets you interact not just with people within the country, but to all NetSpace users
+                        and players all over the world.</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="vr-img vr-img1" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+                    data-aos-easing="ease-out"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="vr-exp w-p">
+
+        <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out">VR Experience</h2>
+
+        <div class="exp-slider" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000"
+            data-aos-easing="ease-out">
+
+
+            <div class="exp-slider-item">
+                <a href="vr-experience.html#escaperooms">
+                    <div class="img">
+                        <img src="imgs/vr-person2.jpg" alt="">
+                        <p>Escape Room</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="exp-slider-item">
+                <a href="vr-experience.html#vrcafe">
+                    <div class="img">
+                        <img src="imgs/vr-person3.jpg" alt="">
+                        <p>VR Café</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="exp-slider-item">
+                <a href="vr-experience.html#games">
+                    <div class="img">
+                        <img src="imgs/vr-person1.jpg" alt="">
+                        <p>Games</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="exp-slider-item">
+                <a href="vr-experience.html#escaperooms">
+                    <div class="img">
+                        <img src="imgs/vr-person2.jpg" alt="">
+                        <p>Escape Room</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="exp-slider-item">
+                <a href="vr-experience.html#vrcafe">
+                    <div class="img">
+                        <img src="imgs/vr-person3.jpg" alt="">
+                        <p>VR Café</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="exp-slider-item">
+                <a href="vr-experience.html#games">
+                    <div class="img">
+                        <img src="imgs/vr-person1.jpg" alt="">
+                        <p>Games</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="vrcafe-sec vc-s2">
+
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12 col-lg-6 order-lg-2 my-auto">
+                <div class="sec-text st-2">
+                    <h2 data-aos="fade-left" data-aos-duration="1500" data-aos-offset="200" data-aos-delay="200"
+                        data-aos-easing="ease-out">Interactive Virtual Reality at Its Finest</h2>
+                    <ol data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400" data-aos-easing="ease-out">
+                        <li>Highly realistic concepts and environments</li>
+                        <li>Thrilling gaming experience</li>
+                        <li>Caters to both newbies and old-time players</li>
+                        <li>Great for parties and corporate events</li>
+                        <li>A wide selection of games for all ages</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-6 order-lg-1">
+                <div class="vr-img vr-img2" data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000"
+                    data-aos-easing="ease-out"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="vr-bg">
+        <div class="parallax-bg-wrapper img">
+            <div class="parallax-bg" id="scene3">
+                <div class="banner-bg sec-bg-3"></div>
+                <div class="banner-bg sec-bg-4" data-depth="0.2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews vrglass-sec pt-0 ">
+        <div class="row">
+
+            <div class="col-md-6 order-md-2">
+                <div class="img vr-glass vr-g2" data-aos="fade-up" data-aos-offset="200" data-aos-duration="2000"
+                    data-aos-delay="500" data-aos-easing="ease-out-back">
+                    <img data-tilt class="vrglassTilt" src="imgs/vr-glass2.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-md-6 testi-col my-auto">
+                <h2 data-aos="fade-up" data-aos-duration="2000" data-aos-easing="ease-out-back">Our Customers</h2>
+                <div class="testimonials-slider" data-aos="fade-up" data-aos-delay="300" data-aos-duration="2000"
+                    data-aos-easing="ease-out-back">
+                    <div class="t-slider">
+                        <div class="t-text">
+                            <p>"10/10! NetSpace has spacious and well-maintained rooms and the staff were really
+                                attentive and
+                                friendly. I love this place, can’t wait to go back again."</p>
+                            <p>Yannick</p>
+                        </div>
+                    </div>
+                    <div class="t-slider">
+                        <div class="t-text">
+                            <p>"What a very cool place. My friends and I instantly got hooked on the multiplayer games
+                                and we
+                                will definitely be back again"</p>
+                            <p>Aidan</p>
+                        </div>
+                    </div>
+                    <div class="t-slider">
+                        <div class="t-text">
+                            <p>"This place has very friendly and accommodating staff. I would highly recommend them to
+                                my family
+                                and friends"</p>
+                            <p>Lawrence Valerio</p>
+                        </div>
+                    </div>
+                    <div class="t-slider">
+                        <div class="t-text">
+                            <p>"Great for partying! NetSpace is a fantastic place with a good selection of games.
+                                Definitely
+                                worth the price."</p>
+                            <p>Claire Barrett</p>
+                        </div>
+                    </div>
+                    <div class="t-slider">
+                        <div class="t-text">
+                            <p>"This place is very easy to find, has great staff and loaded with FUN AND ADDICTIVE
+                                GAMES. My
+                                best VR experience yet! "</p>
+                            <p>Jesse Gerlan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="enquire w-p">
+
+        <div class="container">
+            <h2 class="text-center mb-4" data-aos="fade-up" data-aos-offset="200" data-aos-duration="1000"
+                data-aos-easing="ease-out">Booking Enquiry</h2>
+            <p class="text-center w-50 mx-auto" data-aos="fade-up" data-aos-offset="300" data-aos-delay="400"
+                data-aos-duration="1500" data-aos-easing="ease-out">We respond to enquiries, 24/7. Feel out the form
+                below for bookings, VR
+                experiences and other questions
+                you may have.</p>
+            <div class="contact-form" data-aos="fade" data-aos-offset="300" data-aos-delay="500" data-aos-duration="1000"
+                data-aos-easing="ease-in">
+                <form action="confirmation-message.html">
+                    <div class="form-group row">
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Full Name">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" placeholder="Mobile" maxlength="10" pattern="[0-9]{10}">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="FormControlSelect1" required>
+                            <option selected disabled>What are you enquiring about? *</option>
+                            <option>VR Cafe</option>
+                            <option>Gaming</option>
+                            <option>Simulation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="6" placeholder="Tell us more details*" required></textarea>
+                    </div>
+                    <p class="contact-btn cta2 text-center"> <button class="btn cta-link">Send Enquiry</button></p>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="w-p">
+        <div class="text-align">
+            <div class="footer-logo text-center">
+                <img src="imgs/netspace_logo.png" alt="NetSpace">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#aboutus">About</a></li>
+                    <li><a href="contact.html">Enquiry</a></li>
+                    <li><a href="vr-experience.html#games">Games</a></li>
+                    <li><a href="vr-experience.html#escaperooms">Escape Rooms</a></li>
+                    <li><a href="vr-experience.html#vrcafe">VR Cafe</a></li>
+                </ul>
+            </div>
+            <p class="text-white text-center mb-0">Copyright
+                <script>document.write(new Date().getFullYear());</script>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/tilt.jquery.js"></script>
+    <script src="script/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+    <script src="script/slider.js"></script>
+    <!-- <script> Splitting(); </script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = $('#scene1').get(0);
+        var scene2 = $('#scene2').get(0);
+        var scene3 = $('#scene3').get(0);
+        var parallaxInstance = new Parallax(scene);
+        var parallaxInstance = new Parallax(scene2);
+        var parallaxInstance = new Parallax(scene3);
+    </script>
+
+</body>
+
+</html>
